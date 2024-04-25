@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* global variables */
+:root {
+    --primary: #12bdff;
+    --dark-primary: #1b1e23;
+}
+
+/* universal */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body {
+    background-color: rgb(60, 60, 60);
+    font-family: "Poppins", sans-serif;
+}
+
+/* header */
+header {
+    background-color: var(--dark-primary);
+    padding: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* header name */
+div span a {
+    font-size: 20px;
+    color: var(--primary);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 2px 2px 25px rgb(227, 227, 227);
+}
+div span a:hover{
+    color: #fff;
+    text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.638);
+
+}
+
+/*header menu */
+header ul {
+    display: flex;
+    list-style: none;
+    font-size:16px;
+}
+
+header ul li {
+    padding-right: 20px;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+header ul li a:hover {
+    color: var(--primary);
+    text-shadow: 2px -2px 20px var(--primary);
+}
+
+/* section-hero homepage */
+section.hero-section {
+    background-color: var(--dark-primary);
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 120px 0 200px;
+}
+
+.hero-section__title {
+    font-size: 48px;
+
+}
+
+.hero-section__title span{
+    color: var(--primary);
+    
+}
+
+.hero-seciton__desc {
+    color: #919191;
+    font-size: 15px;
+    max-width: 400px;
+}
+
+/*hero icons */
+ul.social-icons {
+    list-style: none;
+    display: flex;
+    padding: 30px 0;
+   font-size: 20px;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons li>a {
+    color: #fff;
+}
+
+.social-icons li a i.fa-facebook:hover {
+    text-shadow: 2px -2px 20px #717171;
+    color: #1877F2;
+}
+
+.social-icons li a i.fa-instagram:hover {
+    text-shadow: 2px -2px 20px #fff;
+    color: #FCAF45;
+}
+
+.social-icons li a i.fa-linkedin:hover {
+    text-shadow: 2px -2px 20px #717171;
+    color: #0077b5;
+}
+
+.social-icons li a i.fa-github:hover {
+    text-shadow: 2px -2px 20px #fff;
+    color: black;
+}
+
+/* All Buttons */
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--dark-primary);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    background-color: #007bbd;
+}
+
+.btn-dark-outlined {
+
+    background-color: var(--dark-primary);
+    font-weight: bold;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: 600;
+}
+
+.btn-dark-outlined:hover {
+    background-color: var(--primary);
+    color: #fff;
+}
+
+.hero-buttons button{
+    margin-right: 7px;
+}
+
+/* about section  */
+.about-section{
+    background-color: #22282f;
+    color: #fff;
+    padding: 60px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.about-section img{
+    width: 300px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    box-shadow: 2px 5px 40px #006f9c;
+}
+
+.about-section--desc{
+margin-left: 150px;
+max-width: 450px;
+}
+
+.about-section--desc h4{
+font-weight: 700;
+font-size: 30px;
+}
+
+.about-section--desc ul{
+    list-style: none;
+    margin:10px 0;
+    color: gray;
+    font-size: 17px;
+}
+
+.about-section--desc ul li{
+    margin-bottom:10px;
+
+}
+
+.about-section--desc ul li strong{
+    color: #fff;
+    font-weight: 500;
+}
+
+.about-section--desc ul li a{
+    text-decoration: none;
+    color: gray;
+}
+
+.about-section--desc ul li a:hover{
+    color: var(--primary);
+}
+
+.about-section--desc h4 span{
+    color: var(--primary);
+}
+
+
