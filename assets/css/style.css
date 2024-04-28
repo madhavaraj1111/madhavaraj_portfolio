@@ -2,7 +2,7 @@
 
 /* global variables */
 :root {
-  --primary: #12bdff;
+  --primary: #d4af37;
   --dark-primary: #1b1e23;
   --poppins: "Poppins", sans-serif;
 }
@@ -12,6 +12,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* html */
+html {
+  scroll-behavior: smooth;
 }
 
 /* body */
@@ -39,6 +44,7 @@ div span a {
   text-decoration: none;
   text-shadow: 2px 2px 25px rgb(227, 227, 227);
 }
+
 div span a:hover {
   color: #fff;
   text-shadow: 2px 2px 25px rgba(255, 255, 255, 0.638);
@@ -140,7 +146,7 @@ ul.social-icons {
 }
 
 .btn-primary:hover {
-  background-color: #007bbd;
+  background-color: #ffffff;
 }
 
 .btn-dark-outlined {
@@ -169,11 +175,12 @@ ul.social-icons {
   justify-content: center;
   align-items: center;
 }
+
 .about-section img {
   width: 300px;
   border-radius: 50%;
   border: 2px solid var(--primary);
-  box-shadow: 2px 5px 40px #006f9c;
+  box-shadow: 2px 5px 40px #d4af37;
 }
 
 .about-section--desc {
@@ -265,13 +272,13 @@ ul.social-icons {
 }
 
 .work-section-box__icon {
-  background-color: #15bdff;
+  background-color: #d4af37;
   padding: 10px;
   border-radius: 50%;
 }
 
 .work-section-box__icon:hover {
-  background-color: #0089bf;
+  background-color: rgb(226, 183, 38);
 }
 
 .work-section-box__desc {
@@ -324,6 +331,7 @@ textarea {
   border-radius: 5px;
   resize: none;
   font-family: var(--poppins);
+  font-size: 12px;
 }
 
 /* footer */
@@ -335,11 +343,73 @@ footer {
   font-size: 14px;
 }
 
-footer a{
-text-decoration: none;
-color: var(--primary);
+footer a {
+  text-decoration: none;
+  color: var(--primary);
 }
 
-footer a:hover{
-    color: #0089bf;
-    }
+footer a:hover {
+  color: #0089bf;
+}
+
+/* media queries */
+@media only screen and (max-width: 600px) {
+  /* header */
+  header {
+    flex-direction: column;
+  }
+
+  header.header span,ul {
+    margin-bottom: 10px;
+  }
+  header button{
+    margin-bottom: 10px;
+  }
+  
+
+  header span a {
+    text-shadow: none;
+   
+  }
+
+  /* hero-section */
+  section.hero-section {
+    padding: 40px;
+    flex-direction: column;
+    
+  }
+
+/* about-section */
+section.about-section{
+  flex-direction: column;
+}
+.about-section--desc{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+/* work-section */
+.work-section{
+padding: 30px 10px;
+
+}
+.work-section-box{
+  margin-bottom: 12px;
+ margin-right: 0px;
+ width: 100%;
+}
+.work-section-items{
+  flex-direction: column;
+  align-items: center;
+
+}
+/* contact-section */
+.contact-section form input,
+textarea{
+  width: 100%;
+}
+
+/* hero-icons */
+ul.social-icons{
+  font-size: 25px;
+}
+}
