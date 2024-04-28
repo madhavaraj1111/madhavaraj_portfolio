@@ -94,6 +94,7 @@ section.hero-section {
   max-width: 400px;
 }
 
+
 /*hero icons */
 ul.social-icons {
   list-style: none;
@@ -377,6 +378,10 @@ footer a:hover {
     padding: 40px;
     flex-direction: column;
     
+  }
+
+  .hero-section img{
+    width: 100%;
   }
 
 /* about-section */
