@@ -2,7 +2,7 @@
 
 /* global variables */
 :root {
-  --primary: #d4af37;
+  --primary: #00ffe1;
   --dark-primary: #1b1e23;
   --poppins: "Poppins", sans-serif;
 }
@@ -160,7 +160,7 @@ ul.social-icons {
 
 .btn-dark-outlined:hover {
   background-color: var(--primary);
-  color: #fff;
+  color: #000000;
 }
 
 .hero-buttons button {
@@ -178,10 +178,10 @@ ul.social-icons {
 }
 
 .about-section img {
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
   border: 2px solid var(--primary);
-  box-shadow: 2px 5px 40px #d4af37;
+  box-shadow: 2px 5px 40px #009f8d;
 }
 
 .about-section--desc {
@@ -273,7 +273,7 @@ ul.social-icons {
 }
 
 .work-section-box__icon {
-  background-color: #d4af37;
+  background-color: #00ffe1;
   padding: 10px;
   border-radius: 50%;
 }
@@ -382,6 +382,7 @@ footer a:hover {
 
   .hero-section img{
     width: 100%;
+    margin-top: 30px;
   }
 
 /* about-section */
@@ -417,4 +418,9 @@ textarea{
 ul.social-icons{
   font-size: 25px;
 }
+}
+
+/* for sm device */
+@media only screen and (max-width: 320px){
+  
 }
